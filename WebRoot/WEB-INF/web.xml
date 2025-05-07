@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+	<filter>
+		<filter-name>rbFilter</filter-name>
+		<filter-class>com.joymusic.api.RbFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>rbFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+
+	<display-name></display-name>
+	<welcome-file-list>
+		<welcome-file>welcome.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>welcome</servlet-name>
+		<jsp-file>/welcome.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>welcome</servlet-name>
+		<url-pattern>/0</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>recommend</servlet-name>
+		<jsp-file>/recommend.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>recommend</servlet-name>
+		<url-pattern>/1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>kids</servlet-name>
+		<jsp-file>/kids.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>kids</servlet-name>
+		<url-pattern>/2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>nostalgia</servlet-name>
+		<jsp-file>/nostalgia.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>nostalgia</servlet-name>
+		<url-pattern>/3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>tiktok</servlet-name>
+		<jsp-file>/tiktok.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>tiktok</servlet-name>
+		<url-pattern>/4</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>karaoke</servlet-name>
+		<jsp-file>/karaoke.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>karaoke</servlet-name>
+		<url-pattern>/5</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>search</servlet-name>
+		<jsp-file>/search.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>search</servlet-name>
+		<url-pattern>/6</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>artist_fashion</servlet-name>
+		<jsp-file>/artist_fashion.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>artist_fashion</servlet-name>
+		<url-pattern>/7</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>artist_classic</servlet-name>
+		<jsp-file>/artist_classic.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>artist_classic</servlet-name>
+		<url-pattern>/8</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>free</servlet-name>
+		<jsp-file>/free.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>free</servlet-name>
+		<url-pattern>/9</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>album_list</servlet-name>
+		<jsp-file>/album_list.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>album_list</servlet-name>
+		<url-pattern>/10</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>list_fashion</servlet-name>
+		<jsp-file>/list_fashion.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>list_fashion</servlet-name>
+		<url-pattern>/11</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>list_classic</servlet-name>
+		<jsp-file>/list_classic.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>list_classic</servlet-name>
+		<url-pattern>/12</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>checked</servlet-name>
+		<jsp-file>/checked.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>checked</servlet-name>
+		<url-pattern>/13</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>collect_song</servlet-name>
+		<jsp-file>/collect_song.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>collect_song</servlet-name>
+		<url-pattern>/14</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>collect_artist</servlet-name>
+		<jsp-file>/collect_artist.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>collect_artist</servlet-name>
+		<url-pattern>/15</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>setting</servlet-name>
+		<jsp-file>/setting.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>setting</servlet-name>
+		<url-pattern>/16</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>album_freestyle</servlet-name>
+		<jsp-file>/album_freestyle.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>album_freestyle</servlet-name>
+		<url-pattern>/99</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>player_classic</servlet-name>
+		<jsp-file>/player_classic.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>player_classic</servlet-name>
+		<url-pattern>/100</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 联通中心 黑龙江-音乐大厅 -->
+	<servlet>
+		<servlet-name>zone_hall_211</servlet-name>
+		<jsp-file>/zone_hall_211.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>zone_hall_211</servlet-name>
+		<url-pattern>/211</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adminCache</servlet-name>
+		<jsp-file>/handle/adminCache.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminCache</servlet-name>
+		<url-pattern>/h0</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adminEnter</servlet-name>
+		<jsp-file>/handle/adminEnter.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminEnter</servlet-name>
+		<url-pattern>/h1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adminSong</servlet-name>
+		<jsp-file>/handle/adminSong.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminSong</servlet-name>
+		<url-pattern>/h2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adminPlay</servlet-name>
+		<jsp-file>/handle/adminPlay.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminPlay</servlet-name>
+		<url-pattern>/h3</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>adminView</servlet-name>
+		<jsp-file>/handle/adminView.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminView</servlet-name>
+		<url-pattern>/h4</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>adminOther</servlet-name>
+		<jsp-file>/handle/adminOther.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminOther</servlet-name>
+		<url-pattern>/h5</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>iframe</servlet-name>
+		<jsp-file>/mobile/iframe.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>iframe</servlet-name>
+		<url-pattern>/m0</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>qrcode</servlet-name>
+		<jsp-file>/mobile/qrcode.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>qrcode</servlet-name>
+		<url-pattern>/m1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>recommendItr</servlet-name>
+		<jsp-file>/mobile/interface/recommend.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>recommendItr</servlet-name>
+		<url-pattern>/mi1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>home</servlet-name>
+		<jsp-file>/interface/home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>home</servlet-name>
+		<url-pattern>/wx1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>album</servlet-name>
+		<jsp-file>/interface/album.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>album</servlet-name>
+		<url-pattern>/wx2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>song</servlet-name>
+		<jsp-file>/interface/song.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>song</servlet-name>
+		<url-pattern>/wx3</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>more</servlet-name>
+		<jsp-file>/interface/more.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>more</servlet-name>
+		<url-pattern>/wx4</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>list</servlet-name>
+		<jsp-file>/interface/list.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>list</servlet-name>
+		<url-pattern>/wx5</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>push</servlet-name>
+		<jsp-file>/interface/push.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>push</servlet-name>
+		<url-pattern>/wx6</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>find</servlet-name>
+		<jsp-file>/interface/find.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>find</servlet-name>
+		<url-pattern>/wx7</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>collect</servlet-name>
+		<jsp-file>/interface/collect.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>collect</servlet-name>
+		<url-pattern>/wx8</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>suggest</servlet-name>
+		<jsp-file>/interface/suggest.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>suggest</servlet-name>
+		<url-pattern>/wx9</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>check</servlet-name>
+		<jsp-file>/interface/check.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>check</servlet-name>
+		<url-pattern>/wx10</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>singer</servlet-name>
+		<jsp-file>/interface/singer.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>singer</servlet-name>
+		<url-pattern>/wx11</url-pattern>
+	</servlet-mapping>
+
+</web-app>
